@@ -302,7 +302,7 @@ var mainModule = (function(){
         $('.all-projects').off('click').on('click', function() {
             unregisterScroll();
             $('.product-sc-img').hide();
-            $('body').css('background', 'white');
+            $('body').css('transition', 'none').css('background', 'white');
             $(".article").removeClass('show');
             $('.main-content-wrapper, .view-all').hide();
             $(".header").css('background', '#009DE6');
