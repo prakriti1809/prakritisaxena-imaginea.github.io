@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Imaginea GitHub</title>
+    <link rel="shortcut icon" href="http://cdn.imaginea.com/wp-content/uploads/2016/02/Imaginea-logo_tab-logo_16x16.png?x90765">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -36,155 +37,186 @@
         ga('create', 'UA-43907552-1', 'imaginea.github.io');
         ga('send', 'pageview');
     </script>
+    <style>
+        .loader-wrapper {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: black;
+            opacity: 0.8;
+            z-index: 10000;
+            display: block;
+        }
+
+        .loader-wrapper .loader {
+            border: 5px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 5px solid #3498db;
+            width: 80px;
+            height: 80px;
+            -webkit-animation: spin 2s linear infinite;
+            -moz-animation:  spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
-    <div class="home dView">
-        <div class="header-container" id="header-container">
-            <header class="header">
-                <nav class="navbar" role="navigation">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="/">
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    <div class="all-content-wrapper" style="display:none;">
+        <div class="home dView">
+            <div class="header-container" id="header-container">
+                <header class="header">
+                    <nav class="navbar" role="navigation">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="/">
                             <span class="company-logo">
                                 <img src="assets/images/Imaginea-Logo.png" alt="Imaginea logo">
                             </span>
-                        </a>
-                        <button type="button" class="navbar-toggle collapsed">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
+                            </a>
+                            <button type="button" class="navbar-toggle collapsed">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
 
-                    </div>
-                    <div class="collapse navbar-collapse" id="global-nav">
-                        <div class="navbar-right">
-                            <ul class="navbar-nav">
-                                <li>
-                                    <a class="all-projects">PROJECTS</a>
-                                </li>
-                                <li>
-                                    <a href="http://blog.imaginea.com" target="_blank">BLOG</a>
-                                </li>
-                                <li>
-                                    <a href="http://www.imaginea.com/about/careers" target="_blank">CAREERS</a>
-                                </li>
-                                <li>
-                                    <a href="http://www.imaginea.com/contact" target="_blank">CONTACT</a>
-                                </li>
-                            </ul>
                         </div>
-                    </div>
-                </nav>
-            </header>
-        </div>
-        <!-- front-page -->
-        <div class="page-container container-fluid">
-            <div class="main-content-wrapper">
-                <article class="article">
-                    <div class="section-wrapper">
-                        <div class="about-page section" data-bgcolor="#009DE6">
-                            <div class="about-us-section">
-                                <!--<div class="gearbox">-->
+                        <div class="collapse navbar-collapse" id="global-nav">
+                            <div class="navbar-right">
+                                <ul class="navbar-nav">
+                                    <li>
+                                        <a class="all-projects">PROJECTS</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://blog.imaginea.com" target="_blank">BLOG</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.imaginea.com/about/careers" target="_blank">CAREERS</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.imaginea.com/contact" target="_blank">CONTACT</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+            <!-- front-page -->
+            <div class="page-container container-fluid">
+                <div class="main-content-wrapper">
+                    <article class="article">
+                        <div class="section-wrapper">
+                            <div class="about-page section" data-bgcolor="#009DE6">
+                                <div class="about-us-section">
+                                    <!--<div class="gearbox">-->
                                     <!--<div class="gear one">-->
-                                        <!--<div class="gear-inner">-->
-                                            <!--<div class="bar"></div>-->
-                                            <!--<div class="bar"></div>-->
-                                            <!--<div class="bar"></div>-->
-                                        <!--</div>-->
+                                    <!--<div class="gear-inner">-->
+                                    <!--<div class="bar"></div>-->
+                                    <!--<div class="bar"></div>-->
+                                    <!--<div class="bar"></div>-->
+                                    <!--</div>-->
                                     <!--</div>-->
                                     <!--<div class="gear two">-->
-                                        <!--<div class="gear-inner">-->
-                                            <!--<div class="bar"></div>-->
-                                            <!--<div class="bar"></div>-->
-                                            <!--<div class="bar"></div>-->
-                                        <!--</div>-->
+                                    <!--<div class="gear-inner">-->
+                                    <!--<div class="bar"></div>-->
+                                    <!--<div class="bar"></div>-->
+                                    <!--<div class="bar"></div>-->
+                                    <!--</div>-->
                                     <!--</div>-->
                                     <!--<div class="gear three">-->
-                                        <!--<div class="gear-inner">-->
-                                            <!--<div class="bar"></div>-->
-                                            <!--<div class="bar"></div>-->
-                                            <!--<div class="bar"></div>-->
-                                        <!--</div>-->
+                                    <!--<div class="gear-inner">-->
+                                    <!--<div class="bar"></div>-->
+                                    <!--<div class="bar"></div>-->
+                                    <!--<div class="bar"></div>-->
+                                    <!--</div>-->
                                     <!--</div>-->
                                     <!--<div class="gear four large">-->
-                                        <!--<div class="gear-inner">-->
-                                            <!--<div class="bar"></div>-->
-                                            <!--<div class="bar"></div>-->
-                                            <!--<div class="bar"></div>-->
-                                            <!--<div class="bar"></div>-->
-                                            <!--<div class="bar"></div>-->
-                                            <!--<div class="bar"></div>-->
-                                        <!--</div>-->
+                                    <!--<div class="gear-inner">-->
+                                    <!--<div class="bar"></div>-->
+                                    <!--<div class="bar"></div>-->
+                                    <!--<div class="bar"></div>-->
+                                    <!--<div class="bar"></div>-->
+                                    <!--<div class="bar"></div>-->
+                                    <!--<div class="bar"></div>-->
                                     <!--</div>-->
-                                <!--</div>-->
-                                <div class="about-us-details">
-                                    <h1 class="engineering-imaginea">ENGINEERING AT IMAGINEA</h1>
-                                    <p class="about-us">
-                                        <span class="about-us-line-1">We at imaginea believe in contributing back to the open source community.</span>
-                                        <span class="about-us-line-2">This page lists some of our github projects and gives bird's eyeview of the</span>
-                                        <span class="about-us-line-3">technology and functionality that they cater to.</span>
-                                    </p>
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <div class="about-us-details">
+                                        <h1 class="engineering-imaginea">ENGINEERING AT IMAGINEA</h1>
+                                        <p class="about-us">
+                                            <span class="about-us-line-1">We at imaginea believe in contributing back to the open source community.</span>
+                                            <span class="about-us-line-2">This page lists some of our github projects and gives bird's eyeview of the</span>
+                                            <span class="about-us-line-3">technology and functionality that they cater to.</span>
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
 
+                            </div>
+                        </div>
+                        <div class="home-list-wrapper section-wrapper" id="home-list"></div>
+                    </article>
+                </div>
+                <div class="projects-list-container">
+                    <div class="all-projects-header-container">
+                        <div class="all-projects-header">All Projects</div>
+                        <select id="projects-filter">
+                            <option value="" selected="selected">All Projects</option>
+                        </select>
+                    </div>
+                    <div id="all-project-list" class="projects-list-wrapper"></div>
+                </div>
+                <!--  footer -->
+                <div class="footer-wrapper">
+                    <div class="view-all text-center all-projects">
+                        <a class="btn btn-link">VIEW ALL PROJECTS
+                            <img src="assets/images/arrow.png" alt="View All">
+                        </a>
+                    </div>
+                    <div class="cotainer-fluid">
+                        <div class="message">
+                            <h1>WANT TO WORK WITH US?</h1>
+                            <p class="message text-center">Join the team, we're hiring! Here are some of our current open positions:</p>
+                        </div>
+                        <div class="current-openings-btn">
+                            <a class="btn current-openings-link" href="http://www.imaginea.com/about/careers" target="_blank">VIEW
+                                CURRENT OPENINGS</a>
+                        </div>
+                        <div class="contact-div">
+                            <a class="contact-link" href="http://www.imaginea.com/contact" target="_blank">Contact</a>
+                            <span class="copyright-info">All Rights Reserved. © 2016, Pramati</span>
                         </div>
                     </div>
-                    <div class="home-list-wrapper section-wrapper" id="home-list"></div>
-                </article>
-            </div>
-            <div class="loader-wrapper">
-                <div class="loader"></div>
-            </div>
-            <div class="projects-list-container">
-                <div class="all-projects-header-container"> 
-                    <div class="all-projects-header">All Projects</div>
-                    <select id="projects-filter">
-                        <option value="" selected="selected">All Projects</option>
-                    </select>
-                </div>
-                <div id="all-project-list" class="projects-list-wrapper"></div>     
-            </div>
-            <!--  footer -->
-            <div class="footer-wrapper">
-                <div class="view-all text-center all-projects">
-                    <a class="btn btn-link">VIEW ALL PROJECTS
-                        <img src="assets/images/arrow.png" alt="View All">
-                    </a>
-                </div>
-                <div class="cotainer-fluid">
-                    <div class="message">
-                        <h1>WANT TO WORK WITH US?</h1>
-                        <p class="message text-center">Join the team, we're hiring! Here are some of our current open positions:</p>
+                    <div class="bottom-colors-bar">
+                        <div class="bar bar1 col-xs-5ths"></div>
+                        <div class="bar bar2 col-xs-5ths"></div>
+                        <div class="bar bar3 col-xs-5ths"></div>
+                        <div class="bar bar4 col-xs-5ths"></div>
+                        <div class="bar bar5 col-xs-5ths"></div>
                     </div>
-                    <div class="current-openings-btn">
-                        <a class="btn current-openings-link" href="http://www.imaginea.com/about/careers" target="_blank">VIEW
-                        CURRENT OPENINGS</a>
-                    </div>
-                    <div class="contact-div">
-                        <a class="contact-link" href="http://www.imaginea.com/contact" target="_blank">Contact</a>
-                        <span class="copyright-info">All Rights Reserved. © 2016, Pramati</span>
-                    </div>
-                </div>
-                <div class="bottom-colors-bar">
-                    <div class="bar bar1 col-xs-5ths"></div>
-                    <div class="bar bar2 col-xs-5ths"></div>
-                    <div class="bar bar3 col-xs-5ths"></div>
-                    <div class="bar bar4 col-xs-5ths"></div>
-                    <div class="bar bar5 col-xs-5ths"></div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="dOverlay" class="dOverlay no-width">
-        <a href="javascript:void(0)" id="closeBtn">&times;</a>
-        <div class="content-mask">
-            <a class="all-projects">PROJECTS</a>
-            <a href="http://blog.imaginea.com" target="_blank">BLOG</a>
-            <a href="http://www.imaginea.com/about/careers" target="_blank">CAREERS</a>
-            <a href="http://www.imaginea.com/contact" target="_blank">CONTACT</a>
+        <div id="dOverlay" class="dOverlay no-width">
+            <a href="javascript:void(0)" id="closeBtn">&times;</a>
+            <div class="content-mask">
+                <a class="all-projects">PROJECTS</a>
+                <a href="http://blog.imaginea.com" target="_blank">BLOG</a>
+                <a href="http://www.imaginea.com/about/careers" target="_blank">CAREERS</a>
+                <a href="http://www.imaginea.com/contact" target="_blank">CONTACT</a>
+            </div>
         </div>
     </div>
-
     <script type="text/x-jsrender" id="project-card-tmpl">
         <div class="project-card-tmpl section" data-bgcolor="{{:bgcolor}}">
             <img src="{{:projectIcon}}" alt="Image Responsive" class="img-responsive center-block product-sc-img">

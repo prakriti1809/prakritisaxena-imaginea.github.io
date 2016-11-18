@@ -4,6 +4,7 @@ var mainModule = (function(){
     var dataArray = [];
     
     function getProjectsData() {
+        hideAllContent();
         showLoader();
         loadAllProjects();
     }
@@ -22,6 +23,7 @@ var mainModule = (function(){
 
     function allProjectsCallback(projectsList) {
         hideLoader();
+        showAllContent();
         updateSessionStorage('projectsList', JSON.stringify(projectsList));
         buildProjectHomePage(projectsList);
         buildProjectsListPage(projectsList);
@@ -103,6 +105,7 @@ var mainModule = (function(){
             return buildProjectCard(product, 'homePage');
         });
         hideLoader();
+        showAllContent();
         $(".header-container, .article").addClass('show');
         var homeTmpl = $.templates('#project-card-tmpl');
         $('#home-list').html(homeTmpl.render(dataArray));
@@ -369,6 +372,14 @@ var mainModule = (function(){
 
     function hideLoader() {
         $('.loader-wrapper').hide();
+    }
+
+    function showAllContent() {
+        $('.all-content-wrapper').show();
+    }
+
+    function hideAllContent() {
+        $('.all-content-wrapper').hide();
     }
 
     getProjectsData();
